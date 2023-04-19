@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-54059.jpg?w=1060&t=st=1681820531~exp=1681821131~hmac=2287adc4cf89830d185aa32a24b2aa6de32a5b02de17a489cdc9cfe05e027af1);
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  margin: 0;
+
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: auto 1fr auto;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "main2"
+    "footer";
+}
+
+header,
+nav,
+main,
+.main2,
+footer {
+  color: white;
+  padding: 1rem;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  color: black;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container-nav {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: nav;
+  text-align: center;
+  background-color: black;
+  margin: 20px;
+  border-radius: 1rem;
+}
+
+main {
+  grid-area: main;
+  min-height: 100vh;
+}
+
+.main2 {
+  grid-area: main2;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  padding: none;
+  text-align: center;
+}
+
+.link {
+  padding: 50px;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 150%;
+  color: white;
+}
+
+.redeslink {
+  color: white;
+  font-size: 50px;
+  padding-left: 20px;
+}
+
+.container {
+  font-size: 170%;
+  width: 600px;
+  justify-content: center;
+}
+
+.main2 h2 {
+  font-size: 300%;
+}
+
+.img1 {
+  width: 90%;
+  padding-top: 3rem;
+  max-width: 100%;
+}
+
+.donaciones1 {
+  width: 600px;
+  font-size: 170%;
+  justify-content: center;
+}
+
+.donaciones {
+  font-size: 300%;
+}
+
+.img2 {
+  width: 85%;
+  padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0px;
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "main main2"
+      "footer footer";
+  }
+  .container-nav {
+    text-align: center;
+    background-color: black;
+    margin: 20px;
+    border-radius: 1rem;
+  }
+}
